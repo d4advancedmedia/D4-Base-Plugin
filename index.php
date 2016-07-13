@@ -32,8 +32,8 @@ function knickers_admin_elements() {
 }
 
 //Plugin includes
-#include ('lib/config.php');
-#include ('lib/functions.php');
+include ('config.php');
+include ('lib/functions.php');
 #include ('lib/shortcodes.php');
 #include ('lib/posttypes.php');
 #include ('lib/roles.php');
