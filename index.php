@@ -15,9 +15,9 @@
 // Register and enqueue font-end plugin style sheets and scripts.
 add_action( 'wp_enqueue_scripts', 'register_knickers_elements' );
 function register_knickers_elements() {
-	wp_register_style( 'knickers', plugins_url( '../css/knickers.css' , __FILE__ ) );
+	wp_register_style( 'knickers', plugins_url( 'css/knickers.css' , __FILE__ ) );
 	wp_enqueue_style( 'knickers' );
-	wp_register_script( 'knickers', plugins_url( '../js/knickers.js' , __FILE__ ), array( 'jquery' ), 'v20131005', true );
+	wp_register_script( 'knickers', plugins_url( 'js/knickers.js' , __FILE__ ), array( 'jquery' ), 'v20131005', true );
 	wp_enqueue_script('knickers');	
 }
 
@@ -25,9 +25,9 @@ function register_knickers_elements() {
 add_action('admin_enqueue_scripts', 'knickers_admin_elements');
 add_action('login_enqueue_scripts', 'knickers_admin_elements');	
 function knickers_admin_elements() {
-    wp_register_style('knickers-admin-theme', plugins_url('../css/knickers-admin.css', __FILE__) );
+    wp_register_style('knickers-admin-theme', plugins_url('css/knickers-admin.css', __FILE__) );
     wp_enqueue_style('knickers-admin-theme' );
-    wp_register_script( 'knickers-admin-script', plugins_url( '../js/knickers-admin.js' , __FILE__ ), array( 'jquery' ), 'v20131005', true );
+    wp_register_script( 'knickers-admin-script', plugins_url( 'js/knickers-admin.js' , __FILE__ ), array( 'jquery' ), 'v20131005', true );
 	wp_enqueue_script('knickers-admin-script');
 }
 
