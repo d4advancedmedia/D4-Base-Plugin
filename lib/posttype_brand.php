@@ -42,7 +42,7 @@ function register_d4brands_post_type() {
 		'description'           => __( 'Brand Pages', 'd4-base-plugin' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'custom-fields', 'page-attributes', ),
-		'taxonomies'            => '',
+		'taxonomies'            => array(),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,

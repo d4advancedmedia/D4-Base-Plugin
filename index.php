@@ -29,9 +29,9 @@ the base plugin library or the custom library
 include ('custom/custom.php');
 
 //Post Types - DO NOT CUSTOMIZE
-include ('lib/posttype_testimonials.php');
-include ('lib/posttype_staffmember.php');
+include ('lib/posttype_testimonial.php');
 include ('lib/posttype_brand.php');
+include ('lib/posttype_staffmember.php');
 
 //Shortcodes - DO NOT CUSTOMIZE
 include ('lib/shortcode_getpost.php');

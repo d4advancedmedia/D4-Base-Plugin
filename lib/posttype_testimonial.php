@@ -60,7 +60,7 @@ function register_d4testimonial_post_type() {
 	register_post_type( 'd4testimonial', $args );
 
 }
-add_action( 'init', 'testimonial_post_type', 0 );
+add_action( 'init', 'register_d4testimonial_post_type', 0 );
 
 // Register Custom Taxonomy
 function register_d4testimonial_categories() {
