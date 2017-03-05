@@ -5,38 +5,39 @@
 	GitHub Theme URI: https://github.com/d4advancedmedia/
 	GitHub Branch: master
 	Description: Styles and functionality added by D4
-	Version: 13Feb17
+	Version: 3Mar17
 	Author: D4 Adv. Media
 	License: GPL2
 */
 
+// Prevent direct access	
+defined( 'ABSPATH' ) or die( 'No direct access!' );
+
 // Update this version number in the description area as well for cache busting
-$d4baseplugin_version = '13Feb2017';
+$d4baseplugin_version = '3Mar2017';
 
-// Register and enqueue font-end plugin style sheets and scripts.
-add_action( 'wp_enqueue_scripts', 'register_d4_elements' );
-function register_d4_elements() {
-	wp_register_style( 'd4', plugins_url( 'css/d4-styles.css' , __FILE__ ), '', $d4baseplugin_version );
-	wp_enqueue_style( 'd4' );
-	wp_register_script( 'd4', plugins_url( 'js/d4-scripts.js' , __FILE__ ), array( "jquery", "jquery-ui-core", "jquery-ui-accordion" ), $d4baseplugin_version, true );
-	wp_enqueue_script('d4');
-}
 
-// Register and enqueue back-end plugin style sheets and scripts.
-add_action('admin_enqueue_scripts', 'd4_admin_elements');
-add_action('login_enqueue_scripts', 'd4_admin_elements');	
-function d4_admin_elements() {
-    wp_register_style('d4-admin-theme', plugins_url('css/d4-admin-styles.css', __FILE__), '', $d4baseplugin_version );
-    wp_enqueue_style('d4-admin-theme' );
-    wp_register_script( 'd4-admin-script', plugins_url( 'js/d4-admin-scripts.js' , __FILE__ ), array( 'jquery' ), $d4baseplugin_version, true );
-	wp_enqueue_script('d4-admin-script');
-}
+/* 
+------------------------- Includes ---------------------- 
 
-//Plugin includes
-include ('config.php');
-include ('lib/functions.php');
-include ('lib/shortcodes.php');
-#include ('lib/posttypes.php');
-#include ('lib/roles.php');
+Uncomment includes in this section to include portions of
+the base plugin library or the custom library 
+
+*/
+
+//Custom Library - Used for customizing on a per-site basis. Have a unique function to add to a site? Use this directory. Think of it as the old base plugin and customize away.
+include ('custom/custom.php');
+
+//Post Types - DO NOT CUSTOMIZE
+include ('lib/posttype_testimonials.php');
+include ('lib/posttype_staffmember.php');
+include ('lib/posttype_brand.php');
+
+//Shortcodes - DO NOT CUSTOMIZE
+include ('lib/shortcode_getpost.php');
+include ('lib/shortcode_button.php');
+include ('lib/shortcode_carousel.php');//Requires D4am Slider
+include ('lib/shortcode_googlemap.php');
+
 
 ?>
