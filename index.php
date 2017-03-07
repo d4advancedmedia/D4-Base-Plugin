@@ -5,8 +5,13 @@
 	GitHub Theme URI: https://github.com/d4advancedmedia/
 	GitHub Branch: master
 <<<<<<< HEAD
+<<<<<<< HEAD
 	Description: Styles and functionality added by D4
 	Version: 3Mar17
+=======
+	Description: D4 Base Plugin
+	Version:
+>>>>>>> parent of 4678aba... Added versioning variables
 =======
 	Description: D4 Base Plugin
 	Version:
@@ -15,6 +20,7 @@
 	License: GPL2
 */
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 // Prevent direct access	
 defined( 'ABSPATH' ) or die( 'No direct access!' );
@@ -46,6 +52,8 @@ include ('lib/shortcode_carousel.php');//Requires D4am Slider
 include ('lib/shortcode_googlemap.php');
 
 =======
+=======
+>>>>>>> parent of 4678aba... Added versioning variables
 // Register and enqueue font-end plugin style sheets and scripts.
 add_action( 'wp_enqueue_scripts', 'register_d4_elements' );
 function register_d4_elements() {
