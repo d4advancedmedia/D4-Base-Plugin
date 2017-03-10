@@ -2,16 +2,14 @@
 /*
 	Plugin Name: D4 Base Plugin
 	Plugin URI: https://github.com/d4advancedmedia/
-	GitHub Theme URI: https://github.com/d4advancedmedia/
-	GitHub Branch: master
 	Description: Styles and functionality added by D4
-	Version: 13Feb17
+	Version: 1.0.0
 	Author: D4 Adv. Media
 	License: GPL2
 */
 
 // Update this version number in the description area as well for cache busting
-$d4baseplugin_version = '13Feb2017';
+$d4baseplugin_version = '1.0.0';
 
 // Register and enqueue font-end plugin style sheets and scripts.
 add_action( 'wp_enqueue_scripts', 'register_d4_elements' );
