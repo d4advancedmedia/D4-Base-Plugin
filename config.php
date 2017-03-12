@@ -20,5 +20,7 @@ $d4pizza_config = array(
 	'carousel' 			=> false,
 	'googlemap' 		=> false,
 	'reanimator' 		=> false,
+	'slidemenu' 		=> false,
+	'fonticons'			=> false,
 );
 ?>
