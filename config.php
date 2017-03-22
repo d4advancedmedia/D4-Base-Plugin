@@ -20,6 +20,7 @@ $d4pizza_config = array(
 	'fonticons'			=> false,	
 	'getpost' 			=> false,	
 	'googlemap' 		=> false,
+	'portfolio'			=> false,
 	'reanimator' 		=> false,
 	'slidemenu' 		=> false,
 	'staffmember' 		=> false,	
