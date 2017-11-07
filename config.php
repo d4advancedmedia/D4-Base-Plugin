@@ -2,28 +2,23 @@
 //Plugin configuration file, containing API keys or any other site-specific settings
 
 
+function d4toppingchooser($toppings) { 
 
-/*------------------------------------------------------
+	#$toppings['brand'] = true;
+	#$toppings['button'] = true;
+	#$toppings['customsearch'] = true;
+	#$toppings['fonticons'] = true;
+	#$toppings['getpost'] = true;
+	#$toppings['googlemap'] = true;
+	#$toppings['portfolio'] = true;
+	#$toppings['reanimator'] = true;
+	#$toppings['slidemenu'] = true;
+	#$toppings['staffmember'] = true;
+	#$toppings['testimonial'] = true;
 
-Pizza Settings
+	return $toppings;
 
-To enable a feature, just set the value to "true"
+} add_filter( 'd4toppings', 'd4toppingchooser' );
 
-------------------------------------------------------*/
 
-$d4pizza_config = array(
-	
-	'brand' 			=> false,
-	'button' 			=> false,
-	'carousel' 			=> false,
-	'customsearch'		=> false,
-	'fonticons'			=> false,	
-	'getpost' 			=> false,	
-	'googlemap' 		=> false,
-	'portfolio'			=> false,
-	'reanimator' 		=> false,
-	'slidemenu' 		=> false,
-	'staffmember' 		=> false,	
-	'testimonial' 		=> false,
-);
 ?>
